@@ -31,7 +31,7 @@ font-family: 'Roboto Slab', serif;
 
     
     .box {
-      height: 500px;
+      height: 550px;
       width: 500px;
       background-color:rgb(221 235 236);
       box-shadow: 4px 4px 2px grey;
@@ -60,11 +60,30 @@ font-family: 'Roboto Slab', serif;
       border-radius: 5px;
     }
 
+    .box button {
+    display: block;
+    padding: 5px;
+    margin: 25px 12px;
+    width: 372px;
+    height: 37px;
+    border-radius: 5px;
+    background-color: #96dec8;
+}
+
+    .box button:hover{
+        background-color: #51ba9c;
+    }
+
     .box label {
       display: block;
       padding: 2px;
       margin: 10px;
 
+    }
+
+    .submit{
+        background-color: rgb(131, 206, 224);
+        height: 30px;
     }
   </style>
 
@@ -85,6 +104,7 @@ font-family: 'Roboto Slab', serif;
             <input type="text" placeholder="Enter your email ID" />
             <label for="roll_no">Roll No</label>
             <input type="text" placeholder="Enter your roll number" />
+            <button type="submit">Submit</button>
           </form>
         </div>
       <!-- </div> -->
