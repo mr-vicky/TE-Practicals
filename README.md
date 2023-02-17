@@ -1,1 +1,1 @@
-# College Practical Assignmet
+# College Practical Assignment
