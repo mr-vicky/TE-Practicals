@@ -4,3 +4,4 @@
 - [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 - [Selection Sort](https://www.geeksforgeeks.org/selection-sort/)
 - [Greedy algorithm - Prims algorithm for minimum spanning tree](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+- [Single source shortest Path](https://www.geeksforgeeks.org/single-source-shortest-path-between-two-cities/)
