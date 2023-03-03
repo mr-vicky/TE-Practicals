@@ -1,61 +1,77 @@
-import java.io.*;  
-import java.util.*;  
-public class BFSTraversal  
-{  
-	private int node;       /* total number number of nodes in the graph */  
-    private LinkedList<Integer> adj[];      /* adjacency list */  
-    private Queue<Integer> que;           /* maintaining a queue */  
-    BFSTraversal(int v)  
-    {  
-        node = v;  
-        adj = new LinkedList[node];  
-        for (int i=0; i<v; i++)  
-        {  
-            adj[i] = new LinkedList<>();  
-        }  
-        que = new LinkedList<Integer>();  
-    }  
-    void insertEdge(int v,int w)  
-    {  
-        adj[v].add(w);      /* adding an edge to the adjacency list (edges are bidirectional in this example) */  
-    }  
-    void BFS(int n)  
-    {  
-        boolean nodes[] = new boolean[node];       /* initialize boolean array for holding the data */  
-        int a = 0;  
-        nodes[n]=true;                    
-        que.add(n);       /* root node is added to the top of the queue */  
-        while (que.size() != 0)  
-        {  
-            n = que.poll();        /* remove the top element of the queue */   
-            System.out.print(n+" ");    /* print the top element of the queue */  
-            for (int i = 0; i < adj[n].size(); i++)  /* iterate through the linked list and push all neighbors into queue */  
-            {  
-                a = adj[n].get(i);  
-                if (!nodes[a])      /* only insert nodes into queue if they have not been explored already */  
-                {  
-                    nodes[a] = true;  
-                    que.add(a);  
-                }  
-            }    
-        }  
-    }  
-    public static void main(String args[])  
-    {  
-        BFSTraversal graph = new BFSTraversal(6);  
-        graph.insertEdge(0, 1);  
-        graph.insertEdge(0, 3);  
-        graph.insertEdge(0, 4);  
-        graph.insertEdge(4, 5);  
-        graph.insertEdge(3, 5);  
-        graph.insertEdge(1, 2);  
-        graph.insertEdge(1, 0);  
-        graph.insertEdge(2, 1);  
-        graph.insertEdge(4, 1);  
-        graph.insertEdge(3, 1);  
-        graph.insertEdge(5, 4);  
-        graph.insertEdge(5, 3);  
-        System.out.println("Breadth First Traversal for the graph is:");  
-        graph.BFS(0);  
-    }  
+// Java program to print BFS traversal from a given source
+// vertex. BFS(int s) traverses vertices reachable from s.
+import java.io.*;
+import java.util.*;
+
+// This class represents a directed BFSTraversal using adjacency
+// list representation
+class BFSTraversal {
+	private int V; // No. of vertices
+	private LinkedList<Integer> adj[]; // Adjacency Lists
+
+	// Constructor
+	BFSTraversal(int v)
+	{
+		V = v;
+		adj = new LinkedList[v];
+		for (int i = 0; i < v; ++i)
+			adj[i] = new LinkedList();
+	}
+
+	// Function to add an edge into the BFSTraversal
+	void addEdge(int v, int w) { adj[v].add(w); }
+
+	// prints BFS traversal from a given source s
+	void BFS(int s)
+	{
+		// Mark all the vertices as not visited(By default
+		// set as false)
+		boolean visited[] = new boolean[V];
+
+		// Create a queue for BFS
+		LinkedList<Integer> queue
+			= new LinkedList<Integer>();
+
+		// Mark the current node as visited and enqueue it
+		visited[s] = true;
+		queue.add(s);
+
+		while (queue.size() != 0) {
+			// Dequeue a vertex from queue and print it
+			s = queue.poll();
+			System.out.print(s + " ");
+
+			// Get all adjacent vertices of the dequeued
+			// vertex s If a adjacent has not been visited,
+			// then mark it visited and enqueue it
+			Iterator<Integer> i = adj[s].listIterator();
+			while (i.hasNext()) {
+				int n = i.next();
+				if (!visited[n]) {
+					visited[n] = true;
+					queue.add(n);
+				}
+			}
+		}
+	}
+
+	// Driver method to
+	public static void main(String args[])
+	{
+		BFSTraversal g = new BFSTraversal(4);
+
+		g.addEdge(0, 1);
+		g.addEdge(0, 2);
+		g.addEdge(1, 2);
+		g.addEdge(2, 0);
+		g.addEdge(2, 3);
+		g.addEdge(3, 3);
+
+		System.out.println(
+			"Following is Breadth First Traversal "
+			+ "(starting from vertex 2)");
+
+		g.BFS(2);
+	}
 }
+// This code is contributed by Aakash Hasija
