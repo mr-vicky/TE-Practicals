@@ -9,9 +9,6 @@
 ## Privacy: 
 AI systems often rely on personal data, so it is important to protect people's privacy and ensure that their data is not misused.
 
-## Accountability: 
-As AI systems become more autonomous, it is important to establish clear lines of accountability for any decisions made by the system. This means that people should be able to hold someone responsible if something goes wrong.
-
 ## Safety:
  AI systems should be designed to ensure the safety of people and the environment. This is particularly important in areas like transportation and healthcare.
 
