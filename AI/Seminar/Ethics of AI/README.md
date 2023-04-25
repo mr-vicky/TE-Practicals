@@ -15,5 +15,3 @@ AI systems often rely on personal data, so it is important to protect people's p
 ## Human oversight:
  While AI systems can automate many tasks, it is important to maintain human oversight to ensure that the system is making decisions in line with ethical and moral values.
 
-## Impact on society: 
-As AI becomes more widespread, it is important to consider the broader social impact of these systems and how they may affect issues like employment, inequality, and social justice.
