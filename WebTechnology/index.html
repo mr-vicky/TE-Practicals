@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validate JS</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 1.01rem;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #error-msg {
+      color: red;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      /* background-color: black; */
+      width: 100%;
+    }
+
+    .box {
+      background-color: rgb(236 229 236);
+      height: 366px;
+      width: 300px;
+      border-radius: 19px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      box-shadow: 4px 4px 9px grey;
+    }
+
+    h1 {
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 23px;
+    }
+
+    form {
+      margin: auto;
+    }
+
+    form label {
+      margin: 0px 0px 4px 6px;
+      display: block;
+      font-size: 21px;
+    }
+
+    input {
+      display: block;
+      margin: 0px 0px 0px 2px;
+      height: 34px;
+      width: 213px;
+      border-radius: 6px;
+      padding-left: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 11px 0px 0px 2px;
+      height: 37px;
+      background-color: #ca8fea;
+      width: 226px;
+      border-radius: 12px;
+    }
+  </style>
+
+  <script>
+    const form = document.querySelector("#login-form");
+    const errorMsg = document.querySelector("#error-msg");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const username = document.querySelector("#username").value.trim();
+      const password = document.querySelector("#password").value.trim();
+
+      if (username === "" || password === "") {
+        errorMsg.textContent = "Please enter a username and password.";
+        alert("Plz enter the username");
+        return false;
+      } else if (username !== "admin" || password !== "password") {
+        errorMsg.textContent = "Invalid username or password.";
+        alert("Plz enter the username");
+        return false;
+      } else {
+        window.location.href = "dashboard.html"; // Redirect to dashboard page
+      }
+    });
+  </script>
+  <body>
+    <div class="container">
+      <div class="box">
+        <form id="login-form">
+          <h1>Login Form</h1>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="Enter the name"
+          />
+          <br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter the password"
+          />
+          <br />
+          <button type="submit" value="Login">Submit</button>
+          <!-- <input type="submit" > -->
+        </form>
+        <p id="error-msg"></p>
+      </div>
+    </div>
+  </body>
+</html>
