@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chatbot</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" type="image/x-icon" href="assets/bot.ico">
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+
+    
+
+	<section class="msger">
+		<header class="msger-header">
+			<div class="msger-header-title">
+				<i class="fas fa-comment-alt"></i> <h3 style="display: inline;">Chatbot</h1><span>  </span><p id="typingstatus" style="display: inline;font-size: smaller;"></p>
+			</div>
+			<div class="msger-header-options">
+				<span onclick="clearChat()" style="cursor: pointer;"><i class="fas fa-brush"></i> Delete all Chats</span>
+			</div>			  
+		</header>
+
+		<main class="msger-chat">
+		</main>
+
+		<form class="msger-inputarea" id="form">
+			<input type="text" class="msger-input" placeholder="Message...">
+			<button type="submit" class="msger-send-btn"><i class="fa-solid fa-paper-plane" style="padding: 0;"></i></button>
+		</form>
+	</section>
+    <!-- </div> -->
+
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
