@@ -17,7 +17,7 @@
     {
         Class.forName("com.mysql.jdbc.Driver");
         Connection con=(Connection)DriverManager.getConnection(
-            "jdbc:mysql://localhost/wt","root","");
+            "jdbc:mysql://localhost/wt","root","root");
         Statement st=con.createStatement();
         ResultSet rs=st.executeQuery("select * from students_info;");
     %>
