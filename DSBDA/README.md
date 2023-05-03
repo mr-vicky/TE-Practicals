@@ -1,4 +1,4 @@
-# **Web Technolgy (WT)**
+# **Data Science and Big Data Analytics Laboratory**
 
 ## Name : Vivek Sarade
 ## Roll No : 62
