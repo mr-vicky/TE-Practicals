@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+<employees>
+  <employee>
+    <name>Vivek Sarade</name>
+    <title>Software Architect</title>
+    <department>Web Designing</department>
+    <salary>150</salary>
+  </employee>
+  <employee>
+    <name>Nitesh Mali</name>
+    <title>Software Developer</title>
+    <department>IT Professional</department>
+    <salary>150</salary>
+  </employee>
+  <employee>
+    <name>Sanket Katkade</name>
+    <title>Front-End Developer</title>
+    <department>Web Development</department>
+    <salary>150</salary>
+  </employee>
+</employees>

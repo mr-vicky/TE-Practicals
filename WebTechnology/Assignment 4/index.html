@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <center> -->
+        <div id="calculator">
+          <h1 class = "screen" id = "display"></h1><br/>
+          <button class = "number" onClick={press(7)} id="buttonN">7</button>
+          <button class = "number" onClick={press(8)} id="buttonN">8</button>
+          <button class = "number" onClick={press(9)} id="buttonN">9</button>
+          <button class = "symbol" onClick={press("+")} id="buttonA">+</button></br>
+          <button class = "number" onClick={press(4)} id="buttonN">4</button>
+          <button class = "number" onClick={press(5)} id="buttonN">5</button>
+          <button class = "number" onClick={press(6)} id="buttonN">6</button>
+          <button class = "symbol" onClick={press("-")} id="buttonA">-</button></br>
+          <button class = "number" onClick={press(1)} id="buttonN">1</button>
+          <button class = "number" onClick={press(2)} id="buttonN">2</button>
+          <button class = "number" onClick={press(3)} id="buttonN">3</button>
+          <button class = "symbol" onClick={press("*")} id="buttonA">*</button></br>
+          <button class = "symbol" onClick={press(".")} id="buttonA">.</button>
+          <button class = "number" onClick={press(0)} id="buttonN">0</button>
+          <button class = "symbol" onClick={press("(-)")} id="buttonA">(-)</button>
+          <button class = "symbol" onClick={press("/")} id="buttonA">/</button></br> 
+          <button class = "symbol" onClick={erase()} id="buttonC">Clear</button>
+          <button class = "idk" onClick={run()} id="buttonE">Enter</button>
+        </div id = "calculator">
+      <!-- </center> -->
+    <script src="script.js"></script>
+</body>
+</html>
