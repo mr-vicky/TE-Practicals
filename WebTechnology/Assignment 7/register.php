@@ -7,7 +7,7 @@ if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 	exit('Please complete the registration form!');
 }
 // Make sure the submitted registration values are not empty.
-if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {
+if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {	
 	// One or more values are empty.
 	exit('Please complete the registration form');
 }

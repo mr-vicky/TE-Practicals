@@ -4,7 +4,7 @@
     font-size: 16px;
 }
 body {
-    background-color: #776483;;
+    background-color: #b6e5e4;
     margin: 0;
 }
 .register {
@@ -12,10 +12,11 @@ body {
     background-color: #ffffff;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 100px auto;
+    border-radius: 18px;
 }
 .register h1 {
     text-align: center;
-    color: #8c69a0;
+    color: #1e8987;
     font-size: 24px;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid #dee0e4;
@@ -43,17 +44,20 @@ body {
     padding: 0 15px;
 }
 .register form input[type="submit"] {
-    width: 100%;
+
+    width: 77%;
     padding: 15px;
-    margin-top: 20px;
-    background-color: #9a32d6;
-   border: 0;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    background-color: #377479;
+    border: 0;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
     transition: background-color 0.2s;
 }
 .register form input[type="submit"]:hover {
-  background-color: #9a32d6;
+  background-color: #39acb7;
     transition: background-color 0.2s;
 }
