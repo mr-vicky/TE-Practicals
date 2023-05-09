@@ -8,3 +8,5 @@
 - [AI](https://github.com/mr-vicky/TE-Practicals/tree/main/AI)
 - [DSBDA](https://github.com/mr-vicky/TE-Practicals/tree/main/DSBDA) 
 - [WT](https://github.com/mr-vicky/TE-Practicals/tree/main/WebTechnology)
+- [Internship Work](https://github.com/mr-vicky/TE-Practicals/tree/main/Internship-Work)
+
