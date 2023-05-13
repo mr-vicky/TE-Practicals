@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Top Players</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      /* background-color: rgb(172, 177, 172); */
+      font-family: 'Francois One', sans-serif;
+      font-family: 'Roboto', sans-serif;
+    }
+
+
+    h1{
+      text-align: center;
+      font-family: 'Francois One', sans-serif;
+      font-size: 2.9rem;
+      margin: 40px 0px;
+      color: black;
+      /* background-color: rgb(223 231 223); */
+      background: #353333;
+      padding: 12px;
+      color: white;
+
+    }
+
+    .players-data{
+          /* background-color: blue; */
+    margin: auto;
+    padding: -1% 30%;
+    font-size: 1.2rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    }
+
+    .players-bargraph{
+      /* background-color: blue; */
+      text-align: center; 
+    }
+
+    table{
+     
+      height: 100px;
+      width: 100%;
+      /* border: 1px; */
+    }
+
+    tr{
+      height: 50px;
+      width: 100%;
+      /* margin: 2px; */
+      border: 1px;
+      border-bottom: 2px;
+
+    }
+
+    th{
+      /* background-color: rgb(203, 209, 203); */
+      /* background-color: rgb(229 234 228); */
+      background-color: grey;
+    }
+
+    thead{
+      height: 50px;
+      width: 50%;
+      
+    }
+
+    img{
+      margin-bottom: 40px;
+      height: 700px;
+    }
+    
+  </style>
+  <body>
+    <h1>Top Players in the World</h1>
+    <div class="players-data">
+      <table border="2">
+        <thead>
+          {{ data|safe }}
+        </tbody>
+      </table>
+    </div>
+
+    <h1>Analysis of Top Players in the World</h1>
+    <div class="players-bargraph">
+      <img src="{{ image }}" alt="Analysis Bargraph">
+    </div>
+    
+  </body>
+</html>
