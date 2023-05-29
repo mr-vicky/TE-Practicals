@@ -1,0 +1,39 @@
+class name = BinarySearchExample
+
+
+public class BinarySearchExample {
+    public static Integer binarySearch(Integer[] arr, Integer target) {
+        Integer low = 0;
+        Integer high = arr.length - 1;
+
+        while (low <= high) {
+            Integer mid = low + (high - low) / 2;
+
+            if (arr[mid] == target) {
+                return mid;
+            } else if (arr[mid] < target) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+
+        return -1;
+    }
+
+    public static void executeBinarySearch() {
+        Integer[] numbers = new Integer[]{2, 3, 5, 8, 9, 12, 16};
+        Integer target = 9;
+
+        Integer index = binarySearch(numbers, target);
+        if (index != -1) {
+            System.debug('Element ' + target + ' found at index ' + index);
+        } else {
+            System.debug('Element ' + target + ' not found in the array.');
+        }
+    }
+}
+
+
+console execution code : 
+BinarySearchExample.executeBinarySearch();

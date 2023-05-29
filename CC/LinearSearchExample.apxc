@@ -1,3 +1,6 @@
+class name = LinearSearchExample
+
+
 public class LinearSearchExample {
     public static Integer linearSearch(Integer[] arr, Integer target) {
         for (Integer i = 0; i < arr.size(); i++) {
@@ -20,3 +23,8 @@ public class LinearSearchExample {
         }
     }
 }
+
+
+
+console execution code : 
+LinearSearchExample.executeLinearSearch();
